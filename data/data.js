@@ -75,7 +75,7 @@ window.SITE_PAGES = [
           "zh": "開幕致詞"
         },
         "body": {
-          "en": "President's address, an outlook on Taiwan's healthcare system, and the past, present, and future of TMU Hospital. Speakers: President Wu Mai-Si (Taipei Medical University), Deputy Minister Lin Ching-Yi (Ministry of Health and Welfare), and Superintendent Shih Chun-Ming (TMU Hospital).",
+          "en": "President's address, an outlook on Taiwan's healthcare system, and the past, present, and future of TMU Hospital. Speakers: President Wu Mai-Szu (Taipei Medical University), Deputy Minister Lin Ching-Yi (Ministry of Health and Welfare), and Superintendent Shih Chun-Ming (TMU Hospital).",
           "zh": "校長致詞、臺灣醫療展望,以及北醫附醫的過去現在未來。講者:吳麥斯校長(臺北醫學大學)、林靜儀次長(衛生福利部)、施俊明院長(北醫附醫)。"
         }
       },
@@ -1218,7 +1218,7 @@ window.SITE_PAGES = [
           "zh": "開幕致詞"
         },
         "claim": {
-          "en": "Wu Mai-Si is the President of Taipei Medical University",
+          "en": "Wu Mai-Szu is the President of Taipei Medical University",
           "zh": "吳麥斯為北醫校長"
         },
         "verdict": {
