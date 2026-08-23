@@ -5,13 +5,13 @@
 -->
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url>
+    <loc>https://taiwan-biodesign-2026-notes.peteraim.com/</loc>
+  </url>
+  <url>
     <loc>https://taiwan-biodesign-2026-notes.peteraim.com/agenda.html</loc>
   </url>
   <url>
     <loc>https://taiwan-biodesign-2026-notes.peteraim.com/factcheck.html</loc>
-  </url>
-  <url>
-    <loc>https://taiwan-biodesign-2026-notes.peteraim.com/</loc>
   </url>
   <url>
     <loc>https://taiwan-biodesign-2026-notes.peteraim.com/mairal.html</loc>
@@ -24,5 +24,26 @@
   </url>
   <url>
     <loc>https://taiwan-biodesign-2026-notes.peteraim.com/shyr.html</loc>
+  </url>
+  <url>
+    <loc>https://taiwan-biodesign-2026-notes.peteraim.com/zh-Hant/</loc>
+  </url>
+  <url>
+    <loc>https://taiwan-biodesign-2026-notes.peteraim.com/zh-Hant/agenda.html</loc>
+  </url>
+  <url>
+    <loc>https://taiwan-biodesign-2026-notes.peteraim.com/zh-Hant/factcheck.html</loc>
+  </url>
+  <url>
+    <loc>https://taiwan-biodesign-2026-notes.peteraim.com/zh-Hant/mairal.html</loc>
+  </url>
+  <url>
+    <loc>https://taiwan-biodesign-2026-notes.peteraim.com/zh-Hant/opening.html</loc>
+  </url>
+  <url>
+    <loc>https://taiwan-biodesign-2026-notes.peteraim.com/zh-Hant/sheu.html</loc>
+  </url>
+  <url>
+    <loc>https://taiwan-biodesign-2026-notes.peteraim.com/zh-Hant/shyr.html</loc>
   </url>
 </urlset>

@@ -264,6 +264,9 @@ a { color:inherit; text-decoration:none; }
 /* ---- Footer ---- */
 .footer { text-align:center; padding:32px 16px; margin-top:32px; color:var(--on-surface-variant); font-size:.85rem; border-top:1px solid var(--outline-variant); }
 
+/* the other language, reachable without JavaScript (global `a` clears both) */
+.lang-alt-link a { color:var(--on-surface-variant); font-size:.85rem; border-bottom:1px solid var(--outline-variant); }
+
 /* ---- Responsive ---- */
 @media (max-width:860px) {
   .article-layout { grid-template-columns:1fr; }
