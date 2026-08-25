@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="zh-Hant" data-theme="light">
+<head>
+  <!-- Google tag (gtag.js) -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-D6FVFVSG6E"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+    gtag('config', 'G-D6FVFVSG6E');
+  </script>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover" />
+  <title>石瑜 - 告別平均值 · 2026 台北醫學會演講筆記</title>
+  <meta name="description" content="平均治療效果會把「少數真正受益者」淹沒在多數無差異者裡——用 pragmatic trial 產生真實世界資料、用機器學習(uplift modeling / Qini)估每個病人的個人化治療效果,再把模型接回 EHR 即時輔助決策。" />
+  <meta name="theme-color" content="#F7F6F3" />
+  <link rel="canonical" href="https://taiwan-biodesign-2026-notes.peteraim.com/zh-Hant/shyr.html" />
+  <link rel="alternate" hreflang="en" href="https://taiwan-biodesign-2026-notes.peteraim.com/shyr.html" />
+  <link rel="alternate" hreflang="zh-Hant" href="https://taiwan-biodesign-2026-notes.peteraim.com/zh-Hant/shyr.html" />
+  <link rel="alternate" hreflang="x-default" href="https://taiwan-biodesign-2026-notes.peteraim.com/shyr.html" />
+  <meta property="og:type" content="website" />
+  <meta property="og:site_name" content="2026 台北醫學會演講筆記" />
+  <meta property="og:title" content="石瑜 - 告別平均值 · 2026 台北醫學會演講筆記" />
+  <meta property="og:description" content="平均治療效果會把「少數真正受益者」淹沒在多數無差異者裡——用 pragmatic trial 產生真實世界資料、用機器學習(uplift modeling / Qini)估每個病人的個人化治療效果,再把模型接回 EHR 即時輔助決策。" />
+  <meta property="og:url" content="https://taiwan-biodesign-2026-notes.peteraim.com/zh-Hant/shyr.html" />
+  <meta name="twitter:card" content="summary" />
+  <meta name="twitter:title" content="石瑜 - 告別平均值 · 2026 台北醫學會演講筆記" />
+  <meta name="twitter:description" content="平均治療效果會把「少數真正受益者」淹沒在多數無差異者裡——用 pragmatic trial 產生真實世界資料、用機器學習(uplift modeling / Qini)估每個病人的個人化治療效果,再把模型接回 EHR 即時輔助決策。" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Newsreader:ital,opsz,wght@0,6..72,400..700;1,6..72,400..600&family=Noto+Sans+TC:wght@400;500;700&family=Noto+Serif+TC:wght@500;600;700&display=swap" rel="stylesheet" />
+  <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Rounded:opsz,wght,FILL,GRAD@24,400,0,0&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="../assets/styles.css" />
+</head>
+<body data-page="shyr">
+  <!-- shell.js injects the app bar, cross-page nav, footer and dialog around this -->
+  <main id="page">
+<div class="reading-progress" id="readingProgress" aria-hidden="true" style="width: 0%;"></div><header class="page-head"><h1>石瑜 - 告別平均值</h1><p class="page-head__sub">平均治療效果會把「少數真正受益者」淹沒在多數無差異者裡——用 pragmatic trial 產生真實世界資料、用機器學習(uplift modeling / Qini)估每個病人的個人化治療效果,再把模型接回 EHR 即時輔助決策。</p></header><div class="article-layout"><nav class="toc" aria-label="Contents"><div class="toc__inner"><a class="toc-link" href="#at-a-glance" data-toc="at-a-glance">場次資訊</a><a class="toc-link" href="#outline-and-outlook" data-toc="outline-and-outlook">大綱與 5 年展望</a><a class="toc-link" href="#patient-heterogeneity-pragmatic-trials" data-toc="patient-heterogeneity-pragmatic-trials">病人異質性與 Pragmatic Trial</a><a class="toc-link" href="#case-study-icu-oxygen-target" data-toc="case-study-icu-oxygen-target">案例主軸:ICU 血氧目標</a><a class="toc-link" href="#qini-statistic" data-toc="qini-statistic">方法核心:Qini Statistic</a><a class="toc-link toc-link--active" href="#closing-case-cfdna" data-toc="closing-case-cfdna">尾段(依投影片補述)</a><a class="toc-link" href="#quote" data-toc="quote">金句</a></div></nav><div class="article-body prose"><section class="article-section" id="at-a-glance" data-item="" aria-labelledby="at-a-glance-h"><h2 id="at-a-glance-h">場次資訊</h2><ul><li>場次:Plenary Lecture 2(約 09:52–10:30)</li><li>投影片標題:The End of Average Medicine: How AI Identifies the Right Treatment for Every Patient</li><li>講者:Vanderbilt University Medical Center 生物統計學系教授兼主任;Harold L. Moses 癌症研究講座教授;FDA 外部諮詢委員會投票委員(自述)</li><li>記錄狀態:演講尾段(cfDNA 案例後半與結論)記錄不完整,僅依投影片補述</li></ul></section><section class="article-section" id="outline-and-outlook" data-item="" aria-labelledby="outline-and-outlook-h"><h2 id="outline-and-outlook-h">大綱與 5 年展望</h2><p>重點:AI for Smart Biomedical Research → AI for Pragmatic Clinical Trials &amp; Real-World Data → Individualized Treatment Effects and Machine Learning → Conclusion。</p><p>Smart Precision Medicine 三要素:運算力(GPU→TPU→NPU,邊緣運算)、新分析工具(adaptive multimodal)、高品質資料。願景:「To achieve true AGI our models must be adaptive multimodal… they will all combine into a unified intelligence.」</p><p>講者比喻:資料矩陣會變、決策就會變——判斷要不要帶傘,不是看昨天的天氣預報,而是今天看窗外。(靜態模型 vs 自適應即時資料)</p></section><section class="article-section" id="patient-heterogeneity-pragmatic-trials" data-item="" aria-labelledby="patient-heterogeneity-pragmatic-trials-h"><h2 id="patient-heterogeneity-pragmatic-trials-h">病人異質性與 Pragmatic Trial</h2><p>病人特徵複雜多維:Genetic / Clinical / Lifestyle / Environment——需要有彈性的統計方法。</p><p>Efficacy(explanatory)trial 問「理想條件下能不能有效」;effectiveness(pragmatic)trial 問「真實世界是否有效」(引 Ford &amp; Norrie, Pragmatic Trials, NEJM 2016;375:454-63)。</p><p>Pragmatic trial 特徵:寬鬆納入條件、以病人為中心的實務結果、嵌入常規照護、彈性介入、結果直接取自 EHR/申報/登錄資料——cluster 層級設計可豁免個別受試者同意書與傳統病例報告表,大幅降低成本。</p></section><section class="article-section" id="case-study-icu-oxygen-target" data-item="" aria-labelledby="case-study-icu-oxygen-target-h"><h2 id="case-study-icu-oxygen-target-h">案例主軸:ICU 血氧目標</h2><h3>第一幕 — PILOT trial(陰性結果)</h3><p>約 2,500 名機械通氣病人,以 ICU 為單位整群隨機交叉分派 SpO2 目標 90% / 94% / 98%(範圍 88–92 / 92–96 / 96–100);主要終點 ventilator-free days 三組幾乎相同(約 20/21/21 天,p≈0.8)。Semler MW et al., NEJM 2022;387:1759-69。</p><h3>第二幕 — 機器學習翻案(JAMA 2024)</h3><p>研究團隊用同批資料估個人化治療效果——六種 ML 演算法以 k-fold 交叉驗證 + Qini statistic 選模(XGBoost 系勝出),外部驗證用澳紐 ICU-ROX trial;結果顯示部分病人受益於高目標、部分受益於低目標,平均值互相抵銷成「無差異」。Buell KG et al., JAMA 2024;331(14):1195-1204。</p><h3>第三幕 — 接回臨床(Vanderbilt)</h3><p>模型已整合進 Vanderbilt 醫院 EHR(Epic),每日累積病人變數,達閾值即提示醫師調整血氧目標(高/中/低);講者稱初步觀察遵循模型建議者結果較佳——並自陳身為研究設計者可能有偏誤,論文即將發表。</p></section><section class="article-section" id="qini-statistic" data-item="" aria-labelledby="qini-statistic-h"><h2 id="qini-statistic-h">方法核心:Qini Statistic</h2><p>定義(投影片):「如果用模型鎖定最可能受益的人,相比隨機鎖定能多賺多少 outcome?」——uplift modeling 的效能指標,行銷、政策評估、精準醫療通用;重點是找 who benefits most,不是預測風險。</p><p>電商類比(口述):預算只夠打 100 通電話,要挑「打了電話才會改變決定」的客戶;原始 Qini 還有 penalty 概念——本來會買的人被你一打電話反而不買。應用到醫療 = 對這個病人,新治療相對標準治療的額外效益,且可把成本一併算進個人化治療效果。(Qini 參考)</p></section><section class="article-section" id="closing-case-cfdna" data-item="" aria-labelledby="closing-case-cfdna-h"><h2 id="closing-case-cfdna-h">尾段(依投影片補述)</h2><p>cfDNA 產前篩檢案例:第一孕期常規產檢族群,Harmony 檢測只分析特定染色體片段(非全染色體),高通量、準確——對應 NEXT study,Norton ME et al., NEJM 2015;372:1589-97(T21 偵測率 100% vs 傳統篩檢 78.9%)。</p></section><section class="article-section" id="quote" data-item="" aria-labelledby="quote-h"><h2 id="quote-h">金句</h2><blockquote>「告別平均值」——平均治療效果為零,不代表對每個人都沒有效果。</blockquote></section></div></div>
+</main>
+
+  <script src="../data/data.js"></script>
+  <script src="../assets/shell.js"></script>
+  <script src="../assets/app.js"></script>
+<p class="lang-alt-link" style="text-align:center;padding:12px;"><a href="/shyr.html" hreflang="en" rel="alternate" lang="en">English version</a></p>
+</body>
+</html>
